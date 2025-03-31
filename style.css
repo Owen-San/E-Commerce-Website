@@ -172,6 +172,22 @@ button:active {
     filter: invert(40%) sepia(10%) saturate(150%) hue-rotate(180deg) brightness(144%);
 }
 
+#highlights:after {
+    background: url('assets/wave.svg');
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 12vw;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg);
+    filter: invert(40%) sepia(10%) saturate(150%) hue-rotate(180deg) brightness(144%);
+}
+
 .highlight__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +231,81 @@ button:active {
     text-align: center;
     max-width: 200px;
     flex-grow: 1;
+}
+
+/* FEATURES */
+
+#features {
+    padding: 8vw;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    width: calc(25% - 12px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    max-width: 280px;
+    flex-grow: 1;
+}
+
+.book__img {
+    max-height: 320px;
+    transition: all 300ms ease;
+    cursor: no-drop;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.book:hover .book__img {
+    transform: scale(1.03);
+}
+
+.book__title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__ratings {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.book__price {
+    text-align: center;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+    text-align: center;
 }
 
 /* CONTAINERS */
