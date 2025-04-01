@@ -439,10 +439,6 @@ button:active {
         max-width: 600px;
     }
 
-    .highlight {
-        max-width: ;
-    }
-
     .books {
         display: flex;
         flex-wrap: wrap;
