@@ -418,17 +418,29 @@ button:active {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 64px;
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
 
     .nav {
         width: 100%;
     }
 
+    .nav__logo {
+        width: 124px;
+    }
+
     .container {
         display: flex;
         flex-wrap: wrap;
-        width: 600px;
+        max-width: 600px;
+    }
+
+    .highlight {
+        max-width: ;
     }
 
     .books {
@@ -443,12 +455,14 @@ button:active {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .nav {
         max-width: 100%;
     }
+
+    
 
     .nav__links {
         max-width: 100%;
