@@ -341,7 +341,7 @@ button:active {
   align-items: center;
 }
 
-.book:hover,
+.book:hover .book__img,
 .recent__book:hover .book__img {
   transform: scale(1.03);
 }
@@ -350,11 +350,11 @@ button:active {
   font-size: 18px;
   margin-bottom: 8px;
   text-align: center;
+  transition: all 200ms ease;
 }
 
 .book__title:hover {
-  text-decoration: underline;
-  cursor: not-allowed;
+  text-decoration: none;
 }
 
 .book__ratings,
@@ -389,6 +389,11 @@ button:active {
   min-width: 200px;
   max-width: 280px;
   flex-shrink: 0;
+  transition: all 300ms ease;
+}
+
+.recent__book:hover .book__title {
+  text-decoration: none;
 }
 
 /* FOOTER */
