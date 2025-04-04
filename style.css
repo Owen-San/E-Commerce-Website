@@ -471,67 +471,79 @@ button:active {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
-  .header__description {
-    padding: 0 24px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 600px;
+    }
+  
+    .books,
+    .recent__books {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .book,
+    .recent__book {
+      width: calc(50% - 24px);
+    }
+  
+    h1 {
+      font-size: 52px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    .nav__logo {
+      width: 124px;
+    }
+  
+    .nav__links {
+      display: none;
+    }
+  
+    .btn__menu {
+      display: block;
+    }
   }
+  
+  @media (max-width: 550px) {
+    .nav__links {
+      display: none;
+    }
+  
+    .btn__menu {
+      display: block;
+    }
+  
+    .highlight {
+      width: 100%;
+    }
+  
+    .highlight:not(:last-child) {
+      margin-bottom: 24px;
+    }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
+    .book,
+    .recent__book {
+      width: calc(50% - 24px);
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
   }
-
-  .books {
-    flex-wrap: wrap;
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
-
-  .book {
-    width: 50%;
-  }
-
-  h1 {
-    font-size: 52px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  .nav__logo {
-    width: 124px;
-  }
-
-  .nav__links {
-    display: none;
-  }
-
-  .btn__menu {
-    display: block;
-  }
-
-}
-
-@media (max-width: 550px) {
-  .nav__links {
-    display: none;
-  }
-
-  .btn__menu {
-    display: block;
-  }
-
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
