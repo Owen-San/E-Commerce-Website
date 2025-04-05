@@ -551,4 +551,15 @@ button:active {
       align-items: center;
       width: 100%;
     }
+
+    .book,
+    .recent__book {
+      width: calc(50% - 16px);
+      padding: 0;
+    }
+  
+    .book__title,
+    .book__price {
+      font-size: 16px;
+    }
   }
