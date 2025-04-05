@@ -479,12 +479,18 @@ button:active {
   
     .books,
     .recent__books {
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .book {
+        width: calc(26% - 12px);
     }
   
     .book,
     .recent__book {
+      min-width: unset;
       width: calc(50% - 24px);
     }
   
@@ -526,7 +532,6 @@ button:active {
       margin-bottom: 24px;
     }
 
-    .book,
     .recent__book {
       width: calc(50% - 24px);
       display: flex;
