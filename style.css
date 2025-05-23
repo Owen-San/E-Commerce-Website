@@ -344,6 +344,7 @@ select {
 .books {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;

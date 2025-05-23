@@ -61,11 +61,12 @@
             <h2 class="section__title">
               Featured <span class="text--primary">Books</span>
             </h2>
-            <select id="filter">
+            <select id="filter" onchange="filterBooks(event)">
               <option value="" disabled>Sort</option>
               <option value="LOW_TO_HIGH">Price, Low to High</option>
               <option value="HIGH_TO_LOW">Price, High to Low</option>
-              <option value="RATING">Rating</option>
+              <option value="RATING_LOW_TO_HIGH">Ratings, Low to High</option>
+              <option value="RATING_HIGH_TO_LOW">Ratings, High to Low</option>
             </select>
           </div>
           <div class="books">
