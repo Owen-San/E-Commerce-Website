@@ -52,6 +52,7 @@ hr {
 .container, .row {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 16px;
   width: 100%;
   padding: 0 16px;
 }
@@ -365,7 +366,7 @@ select {
 }
 
 .book__img {
-  max-height: 320px;
+  height: 300px;
   cursor: no-drop;
   width: auto;
   max-width: 100%;
