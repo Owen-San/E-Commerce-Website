@@ -344,9 +344,11 @@ select {
 .books {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -602,6 +604,12 @@ select {
   @media (max-width: 480px) {
     h1 {
       font-size: 40px;
+    }
+
+    .books__header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
     }
   
     .container {
