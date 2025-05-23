@@ -549,6 +549,10 @@ select {
     .book {
         width: calc(26% - 12px);
     }
+
+    .book__img {
+      height: 300px;
+    }
   
     .book,
     .recent__book {
@@ -622,12 +626,16 @@ select {
 
     .book,
     .recent__book {
-      width: calc(50% - 16px);
+
       padding: 0;
     }
   
     .book__title,
     .book__price {
       font-size: 16px;
+    }
+
+    .book__img {
+      height: 200px;
     }
   }
