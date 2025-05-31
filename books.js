@@ -70,7 +70,7 @@ function filterBooks(event) {
   renderBooks(event.target.value);
 }
 
-setTimeout(() => {
+document.addEventListener("DOMContentLoaded", () => {
   renderBooks();
 });
 
